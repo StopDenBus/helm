@@ -6,7 +6,11 @@ name: paperless-ngx-stack
 version: 0.0.1
 appVersion: 1.6.0
 dependencies:
+  - name: postgresql
+    version: 11.1.19
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
   - name: redis
     version: 16.8.5
     repository: https://charts.bitnami.com/bitnami
-    #alias: paperless-ngx-redis
+    condition: redis.enabled

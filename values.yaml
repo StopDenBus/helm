@@ -1,6 +1,15 @@
+global:
+  storageClass: 'kubermatic-fast'
+
 redis:
+  enabled: true
   fullnameOverride: paperless-ngx-redis
   architecture: 'standalone'
-  master:
-    persistence:
-      storageClass: 'kubermatic-fast'
+
+postgresql:
+  enabled: true
+  fullnameOverride: paperless-ngx-postgresql
+  auth:
+    existingSecret: postgres-password
+    username: paperless-ngx
+    database: paperless-ngx
