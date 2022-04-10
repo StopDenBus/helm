@@ -1,0 +1,6 @@
+redis:
+  fullnameOverride: paperless-ngx-redis
+  architecture: 'standalone'
+
+common:
+  fullnameOverride: paperless-ngx-redis

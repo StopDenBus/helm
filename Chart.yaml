@@ -1,0 +1,12 @@
+apiVersion: v2
+description: paperless-ngx-stack collects Kubernetes manifests to provide an installation of paperless-ngx on Kubernetes
+icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/main/resources/logo/web/png/Black%20logo%20-%20no%20background.png
+type: application
+name: paperless-ngx-stack
+version: 0.0.1
+appVersion: 1.6.0
+dependencies:
+  - name: redis
+    version: 16.8.5
+    repository: https://charts.bitnami.com/bitnami
+    #alias: paperless-ngx-redis
