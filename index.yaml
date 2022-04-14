@@ -1,3 +1,26 @@
 apiVersion: v1
 entries:
   paperless-ngx: []
+  paperless-ngx-stack:
+  - apiVersion: v2
+    appVersion: 1.6.0
+    created: "2022-04-14T17:25:10.241995832Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.1.19
+    - condition: redis.enabled
+      name: redis
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.8.5
+    description: paperless-ngx-stack collects Kubernetes manifests to provide an installation
+      of paperless-ngx on Kubernetes
+    digest: 3f3def8eb1fa372c23df9befca8ad5c98c9c34063095f248b44cf9ce3c3b279e
+    icon: https://raw.githubusercontent.com/paperless-ngx/paperless-ngx/main/resources/logo/web/png/Black%20logo%20-%20no%20background.png
+    name: paperless-ngx-stack
+    type: application
+    urls:
+    - https://github.com/StopDenBus/paperless-ngx/releases/download/paperless-ngx-stack-0.0.1/paperless-ngx-stack-0.0.1.tgz
+    version: 0.0.1
+generated: "2022-04-14T17:25:10.242010732Z"
