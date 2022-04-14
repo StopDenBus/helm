@@ -7,8 +7,8 @@ Paperless-ngx is a document management system that transforms your physical docu
 ## TL;DR
 
 ```bash
-helm repo add bitnami https://charts.bitnami.com/bitnami
-helm install my-release bitnami/postgresql
+helm repo add stopdenbus https://stopdenbus.github.io/paperless-ngx
+helm install my-release stopdenbus/paperless-ngx-stack
 ```
 
 ## Introduction
@@ -29,7 +29,7 @@ You can choose to install [Redis](https://redis.io/) and [PostgreSQL](http://www
 To install the chart with the release name `my-release`:
 
 ```bash
-helm install my-release bitnami/postgresql
+helm install my-release stopdenbus/paperless-ngx-stack
 ```
 
 The command deploys Paperless-ngx on the Kubernetes cluster in the default configuration. The [Parameters](#parameters) section lists the parameters that can be configured during installation.
