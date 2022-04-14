@@ -1,10 +1,10 @@
 global:
-  storageClass: 'kubermatic-fast'
+  storageClass: ""
 
 redis:
   enabled: true
   fullnameOverride: paperless-ngx-redis
-  architecture: 'standalone'
+  architecture: standalone
 
 postgresql:
   enabled: true
