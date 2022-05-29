@@ -258,7 +258,6 @@ customReadinessProbe: {}
 ##
 serviceAccount:
   enabled: false
-  create: true
   name: ""
   automountServiceAccountToken: true
   annotations: {}
