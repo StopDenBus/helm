@@ -1,6 +1,21 @@
 apiVersion: v1
 entries:
-  gotenberg: []
+  gotenberg:
+  - apiVersion: v2
+    appVersion: 7.5.2
+    created: "2022-05-29T11:45:45.249473486Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      version: 1.x.x
+    description: A Docker-powered stateless API for PDF files
+    digest: c6c03989e772c2bf66c497febb7d485c3e8c04634cc35019ad627dd32bbacf0d
+    icon: https://user-images.githubusercontent.com/8983173/130322857-185831e2-f041-46eb-a17f-0a69d066c4e5.png
+    name: gotenberg
+    type: application
+    urls:
+    - https://github.com/StopDenBus/helm/releases/download/gotenberg-0.0.1/gotenberg-0.0.1.tgz
+    version: 0.0.1
   paperless-ngx-stack:
   - apiVersion: v2
     appVersion: 1.6.0
@@ -23,4 +38,4 @@ entries:
     urls:
     - https://github.com/StopDenBus/paperless-ngx/releases/download/paperless-ngx-stack-0.0.1/paperless-ngx-stack-0.0.1.tgz
     version: 0.0.1
-generated: "2022-04-14T17:25:10.242010732Z"
+generated: "2022-05-29T11:45:45.249479786Z"
